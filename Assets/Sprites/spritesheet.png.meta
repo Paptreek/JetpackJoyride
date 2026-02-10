@@ -317,6 +317,270 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: cloud_md_1
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1130
+        width: 300
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee64c9500593e743bb4deb701b3521e
+      internalID: 1943793728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_sm
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1130
+        width: 140
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3167a561694d84249a26f74b96afb8c1
+      internalID: 1808070685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_lg
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 970
+        width: 460
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a3d9ddbf50e204091ff0595c8bef02
+      internalID: -964076540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_md_2
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 810
+        width: 300
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0145cbd84c9fffe45bef971bd87115ba
+      internalID: -969936912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f85d0681d3f434dbbf4d6577816cec
+      internalID: 2788568348960109317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 959
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e95ced1c1a537c47908eae017b682fd
+      internalID: -123870846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_tree_md
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 320
+        width: 140
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40037a082b1a52543b46a68a4fe0c459
+      internalID: -1823831763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_tree_lg
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 322
+        width: 160
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cde086a89b6084486dbdf31be48c7a
+      internalID: 71375213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_tree_sm
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 320
+        width: 80
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e95e187c8668054f9df3b8a8680723b
+      internalID: -783901918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_tree_md
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 320
+        width: 140
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f9ad288de2c3842a712d9044eb3176
+      internalID: 331071627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_tree_lg
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 320
+        width: 160
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410f113101a0ce643a15deb344081c51
+      internalID: 226702753830753226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_tree_sm
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 320
+        width: 80
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542266c307e74a04ca95310ecedab989
+      internalID: -7921052967969465774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -329,23 +593,35 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":2,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       arrow: -5962389079421231736
+      cloud_lg: -964076540
+      cloud_md_1: 1943793728
+      cloud_md_2: -969936912
+      cloud_sm: 1808070685
+      dark_tree_lg: 71375213
+      dark_tree_md: -1823831763
+      dark_tree_sm: -783901918
+      ground: 2788568348960109317
+      ground_2: 1552087994
+      light_tree_lg: 226702753830753226
+      light_tree_md: 331071627
+      light_tree_sm: -7921052967969465774
       slime_idle_1: 8020143640844766479
       slime_idle_2: -6251682230944352461
       slime_idle_3: -1259408508766424310
       slime_jump_1: -7676219313036738927
       slime_jump_2: 6985626698306143173
       slime_jump_3: 6413020478584453356
+      spritesheet_0: -123870846
       spritesheet_10: 5777552420452043588
       spritesheet_11: 1269540525142108225
       spritesheet_12: -2630129836624287915
       spritesheet_15: 4773514653529381359
       spritesheet_17: -6420534950463556919
-      spritesheet_4: 2788568348960109317
-      spritesheet_5: 226702753830753226
-      spritesheet_6: -7921052967969465774
       spritesheet_7: -1370661682523340017
       spritesheet_8: -8276262488406422588
       spritesheet_9: -5906973516983679737
