@@ -3,7 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float jumpHeight;
+    public float jumpForce;
+    public Animator animator;
 
     private Rigidbody2D _rb;
     private InputAction _jump;
@@ -23,7 +24,8 @@ public class PlayerController : MonoBehaviour
     {
         if (_jump.IsPressed())
         {
-            _rb.linearVelocityY = jumpHeight;
+            _rb.linearVelocityY = jumpForce;
+            animator.SetTrigger("IsJumping");
             Debug.Log($"Jumping");
         }
     }
