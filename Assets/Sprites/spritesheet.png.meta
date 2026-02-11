@@ -581,6 +581,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: raven_fly
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 670
+        width: 150
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed885e4d79766346992cf37ca5110a0
+      internalID: -915798527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raven_idle
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 670
+        width: 150
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3891e85537d756547a1fd4103866c41b
+      internalID: -2029357948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -610,6 +654,8 @@ TextureImporter:
       light_tree_lg: 226702753830753226
       light_tree_md: 331071627
       light_tree_sm: -7921052967969465774
+      raven_fly: -915798527
+      raven_idle: -2029357948
       slime_idle_1: 8020143640844766479
       slime_idle_2: -6251682230944352461
       slime_idle_3: -1259408508766424310

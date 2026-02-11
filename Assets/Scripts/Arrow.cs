@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    public float moveSpeed;
+    private float _moveSpeed = 8.5f;
 
     void Update()
     {
-        transform.Translate(new Vector3(-moveSpeed, 0, 0) * Time.deltaTime);
+        transform.Translate(new Vector3(-_moveSpeed, 0, 0) * Time.deltaTime);
 
         if (transform.position.x <= -10)
         {
