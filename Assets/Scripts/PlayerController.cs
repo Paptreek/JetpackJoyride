@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
         if (_jump.IsPressed())
         {
             _rb.linearVelocityY = jumpForce;
-            //animator.SetTrigger("IsJumping");
             animator.SetBool("IsJump", true);
             Debug.Log($"Jumping");
         }
