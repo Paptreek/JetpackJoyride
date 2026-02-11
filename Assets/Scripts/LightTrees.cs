@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Background : MonoBehaviour
+public class LightTrees : MonoBehaviour
 {
     public float scrollSpeed = 0.5f;
 
@@ -8,9 +8,9 @@ public class Background : MonoBehaviour
     {
         transform.Translate(new Vector3(-scrollSpeed, 0, 0) * Time.deltaTime);
 
-        if (transform.position.x <= -10)
+        if (transform.position.x <= -17.9f)
         {
-            Destroy(gameObject);
+            transform.position = new Vector3(17.85f, 0.14917f, 0);
         }
     }
 }

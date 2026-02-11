@@ -8,9 +8,9 @@ public class Ground : MonoBehaviour
     {
         transform.Translate(new Vector3(-scrollSpeed, 0, 0) * Time.deltaTime);
 
-        if (transform.position.x <= -10)
+        if (transform.position.x <= -9.69)
         {
-            Destroy(gameObject);
+            transform.position = new Vector3(27.09f, -4.76f, 0);
         }
     }
 }
