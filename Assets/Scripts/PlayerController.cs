@@ -26,11 +26,18 @@ public class PlayerController : MonoBehaviour
         {
             _rb.linearVelocityY = jumpForce;
             animator.SetBool("IsJump", true);
-            Debug.Log($"Jumping");
         }
         else
         {
             animator.SetBool("IsJump", false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Game Over!");
         }
     }
 }

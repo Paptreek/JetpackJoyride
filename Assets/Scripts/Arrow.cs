@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    private float _moveSpeed = 8.5f;
+    private float _moveSpeed = 10.0f;
 
     void Update()
     {

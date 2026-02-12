@@ -428,13 +428,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_0
+      name: knight_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 959
-        height: 259
+        x: 10
+        y: 10
+        width: 240
+        height: 230
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,6 +625,72 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: knight_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 10
+        width: 240
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea5def226d63514ea6e5936aad8d4ce
+      internalID: -1001339396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight_3
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 10
+        width: 240
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae84b44b53b4a34b9bf2d59290f58bf
+      internalID: 1353710104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight_4
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 10
+        width: 240
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87534f92b8c8eb742831117a8d2f18c2
+      internalID: 1025617065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -651,6 +717,10 @@ TextureImporter:
       dark_tree_sm: -783901918
       ground: 2788568348960109317
       ground_2: 1552087994
+      knight_1: -123870846
+      knight_2: -1001339396
+      knight_3: 1353710104
+      knight_4: 1025617065
       light_tree_lg: 226702753830753226
       light_tree_md: 331071627
       light_tree_sm: -7921052967969465774
@@ -662,7 +732,6 @@ TextureImporter:
       slime_jump_1: -7676219313036738927
       slime_jump_2: 6985626698306143173
       slime_jump_3: 6413020478584453356
-      spritesheet_0: -123870846
       spritesheet_10: 5777552420452043588
       spritesheet_11: 1269540525142108225
       spritesheet_12: -2630129836624287915
