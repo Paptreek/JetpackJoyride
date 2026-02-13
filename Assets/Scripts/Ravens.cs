@@ -4,6 +4,13 @@ public class Ravens : MonoBehaviour
 {
     private float _moveSpeed = 1.5f;
 
+    private void Awake()
+    {
+        float spawnHeight = Random.Range(-2.0f, 3.0f);
+
+        transform.position = new Vector3(10.0f, spawnHeight, 0);
+    }
+
     void Update()
     {
         float spawnHeight = Random.Range(-2.0f, 3.0f);

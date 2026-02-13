@@ -7,13 +7,13 @@ public class GameManager : MonoBehaviour
 
     private float _score;
 
-    void Start()
-    {
-    }
-
     void Update()
     {
         _score = GetComponent<Score>().GetScore();
         scoreText.text = $"Current Score: {_score:0}";
+
+        // for every 50 points, increase speed of arrows
+
+        // for every 100 points, increase spawn rate of birds
     }
 }
