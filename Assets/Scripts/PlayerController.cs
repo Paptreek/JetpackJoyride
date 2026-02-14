@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D _rb;
     private InputAction _jump;
+    private bool _isDead;
 
     private void Start()
     {
@@ -33,11 +34,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Game Over!");
+            //_isDead = true;
+            Destroy(gameObject);
         }
+    }
+
+    public bool IsDead()
+    {
+        return _isDead;
     }
 }

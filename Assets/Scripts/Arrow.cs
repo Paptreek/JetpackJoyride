@@ -4,24 +4,35 @@ public class Arrow : MonoBehaviour
 {
     public GameObject player;
 
-    private float _moveSpeed = 10.0f;
+    private float _moveSpeed;
 
     private void Awake()
     {
+        _moveSpeed = 10.0f;
+        float spawnDistance = Random.Range(10.65f, 25.0f);
         float spawnHeight = player.gameObject.transform.position.y;
 
-        transform.position = new Vector3(15, spawnHeight, 0);
+        transform.position = new Vector3(spawnDistance, spawnHeight, 0);
     }
 
     void Update()
     {
-        float spawnHeight = player.gameObject.transform.position.y;
-
         transform.Translate(new Vector3(-_moveSpeed, 0, 0) * Time.deltaTime);
-
-        if (transform.position.x <= -11.8f)
+        
+        if (player != null)
         {
-            transform.position = new Vector3(10.0f, spawnHeight, 0);
+            float spawnDistance = Random.Range(10.65f, 25.0f);
+            float spawnHeight = player.gameObject.transform.position.y;
+
+            if (transform.position.x <= -11.8f)
+            {
+                transform.position = new Vector3(spawnDistance, spawnHeight, 0);
+            }
         }
+    }
+
+    public void IncreaseSpeed(float increment)
+    {
+        _moveSpeed += increment;
     }
 }

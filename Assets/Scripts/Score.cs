@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
+    public GameObject player;
+
     private float _score;
     private float _timeElapsed;
 
@@ -12,10 +14,11 @@ public class Score : MonoBehaviour
 
     private void CalculateScore()
     {
-        _timeElapsed += Time.deltaTime;
-        _score = _timeElapsed * 5;
-
-        //Debug.Log($"Score: {_score.ToString("0")}, Time: {_timeElapsed}");
+        if (player != null)
+        {
+            _timeElapsed += Time.deltaTime;
+            _score = _timeElapsed * 5;
+        }
     }
 
     public float GetScore()

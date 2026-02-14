@@ -2,15 +2,25 @@ using UnityEngine;
 
 public class LightTrees : MonoBehaviour
 {
-    public float scrollSpeed = 0.5f;
+    private float _scrollSpeed;
+
+    private void Start()
+    {
+        _scrollSpeed = 0.25f;
+    }
 
     void Update()
     {
-        transform.Translate(new Vector3(-scrollSpeed, 0, 0) * Time.deltaTime);
+        transform.Translate(new Vector3(-_scrollSpeed, 0, 0) * Time.deltaTime);
 
         if (transform.position.x <= -17.9f)
         {
             transform.position = new Vector3(17.85f, 0.14917f, 0);
         }
+    }
+
+    public void IncreaseSpeed(float increment)
+    {
+        _scrollSpeed += increment;
     }
 }
