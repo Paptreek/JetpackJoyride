@@ -14,10 +14,10 @@ public class Score : MonoBehaviour
 
     private void CalculateScore()
     {
-        int diamondsCollected = player.GetComponent<PlayerController>().GetDiamondCount();
-
         if (player != null)
         {
+            int diamondsCollected = player.GetComponent<PlayerController>().GetDiamondCount();
+            
             _timeElapsed += Time.deltaTime;
             _score = (_timeElapsed * 5) + (diamondsCollected * 5);
         }

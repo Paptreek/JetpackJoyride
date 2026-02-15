@@ -43,8 +43,15 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         _score = GetComponent<Score>().GetScore();
-        scoreText.text = $"Current Score: {_score:0}";
-        // get high score stuff from other projects
+        scoreText.text = $"Current Score: {_score:0000}";
+
+        _highScore = GetHighScore("HighScore");
+        highScoreText.text = $"High Score: {_highScore:0000}";
+
+        if (_score > GetHighScore("HighScore"))
+        {
+            SetHighScore("HighScore", Convert.ToInt32(_score));
+        }
 
         IncreaseDifficulty();
     }
@@ -76,5 +83,15 @@ public class GameManager : MonoBehaviour
             spawnManager.GetComponent<SpawnManager>().IncreaseSpawnRate();
             _hasSpawnRateIncreased = true;
         }
+    }
+
+    private void SetHighScore(string keyName, int value)
+    {
+        PlayerPrefs.SetInt(keyName, value);
+    }
+
+    private int GetHighScore(string keyName)
+    {
+        return PlayerPrefs.GetInt(keyName);
     }
 }
