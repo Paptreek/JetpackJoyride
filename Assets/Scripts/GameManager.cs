@@ -8,21 +8,25 @@ public class GameManager : MonoBehaviour
     public TMP_Text highScoreText;
 
     public GameObject player;
+    public GameObject spawnManager;
+
     public GameObject arrows;
     public GameObject ravens;
+
+    public GameObject diamondsM;
+    public GameObject diamondsSquare;
+    public GameObject diamondsLine;
+    
     public GameObject ground1;
     public GameObject ground2;
     public GameObject darkTrees1;
     public GameObject darkTrees2;
     public GameObject lightTrees1;
     public GameObject lightTrees2;
-    public GameObject diamondsM;
-    public GameObject diamondsSquare;
-    public GameObject diamondsLine;
-    public GameObject spawnManager;
 
     private float _score;
     private float _highScore;
+
     private float _timer = 1.0f;
     private float _speedIncrease = 0.1f;
 

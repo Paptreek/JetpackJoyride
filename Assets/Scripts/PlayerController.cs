@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D _rb;
     private InputAction _jump;
-    private bool _isDead;
+    private int _diamondsCollected;
 
     private void Start()
     {
@@ -34,18 +34,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            //_isDead = true;
             Destroy(gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Diamond"))
+        {
+            _diamondsCollected++;
         }
     }
 
-    public bool IsDead()
+    public int GetDiamondCount()
     {
-        return _isDead;
+        return _diamondsCollected;
     }
 }

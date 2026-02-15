@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
     {
         _timer = 5.0f;
 
-        SpawnRavens();
+        SpawnDiamonds();
     }
 
     void Update()
