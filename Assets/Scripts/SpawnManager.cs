@@ -77,7 +77,6 @@ public class SpawnManager : MonoBehaviour
 
     public void IncreaseSpawnRate()
     {
-        _longestSpawn -= 1.5f;
-        _shortestSpawn -= 1.0f;
+        _longestSpawn -= 2.5f;
     }
 }
