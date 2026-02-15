@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7753115468119025574}
+  - component: {fileID: 1546871464165358613}
   m_Layer: 0
   m_Name: Diamonds (Line)
   m_TagString: Untagged
@@ -25,17 +26,30 @@ Transform:
   m_GameObject: {fileID: 2510683013646887254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.58, y: -0.18, z: 0}
+  m_LocalPosition: {x: 12, y: -2.4650044, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8543930924038511262}
-  - {fileID: 8864453073484406000}
-  - {fileID: 2462319380587114800}
-  - {fileID: 7398525755714429743}
-  - {fileID: 5693490247601322296}
+  - {fileID: 3833833540357483745}
+  - {fileID: 8193102004946992894}
+  - {fileID: 6349017823391868137}
+  - {fileID: 7029356837711529807}
+  - {fileID: 7790018159429304609}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1546871464165358613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510683013646887254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdce183500a458248a5f584c074e3121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diamonds
+  moveSpeed: 3.2
 --- !u!1001 &930317185560664106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44,6 +58,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7753115468119025574}
     m_Modifications:
+    - target: {fileID: 6768090422801954478, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -88,14 +106,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
---- !u!4 &7398525755714429743 stripped
+--- !u!4 &8193102004946992894 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
   m_PrefabInstance: {fileID: 930317185560664106}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1243323824868386805
@@ -106,6 +128,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7753115468119025574}
     m_Modifications:
+    - target: {fileID: 6768090422801954478, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -150,14 +176,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
---- !u!4 &8864453073484406000 stripped
+--- !u!4 &7790018159429304609 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
   m_PrefabInstance: {fileID: 1243323824868386805}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2078361323597291931
@@ -168,6 +198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7753115468119025574}
     m_Modifications:
+    - target: {fileID: 6768090422801954478, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -212,14 +246,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond
       objectReference: {fileID: 0}
+    - target: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
---- !u!4 &8543930924038511262 stripped
+--- !u!4 &7029356837711529807 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
   m_PrefabInstance: {fileID: 2078361323597291931}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2686017030897418813
@@ -230,6 +268,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7753115468119025574}
     m_Modifications:
+    - target: {fileID: 6768090422801954478, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -274,14 +316,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
---- !u!4 &5693490247601322296 stripped
+--- !u!4 &6349017823391868137 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
   m_PrefabInstance: {fileID: 2686017030897418813}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5219138819140569653
@@ -292,6 +338,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7753115468119025574}
     m_Modifications:
+    - target: {fileID: 6768090422801954478, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -341,8 +391,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
---- !u!4 &2462319380587114800 stripped
+--- !u!4 &3833833540357483745 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7657792225541569285, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9032699473229194964, guid: 794623c0c1c0870449d4fa898ea3dc55, type: 3}
   m_PrefabInstance: {fileID: 5219138819140569653}
   m_PrefabAsset: {fileID: 0}

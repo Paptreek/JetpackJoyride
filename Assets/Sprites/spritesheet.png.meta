@@ -428,28 +428,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_1
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 10
-        width: 240
-        height: 230
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e95ced1c1a537c47908eae017b682fd
-      internalID: -123870846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: dark_tree_md
       rect:
         serializedVersion: 2
@@ -626,13 +604,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_2
+      name: coin_1
       rect:
         serializedVersion: 2
-        x: 280
-        y: 10
-        width: 240
-        height: 230
+        x: 670
+        y: 670
+        width: 90
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -641,42 +619,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aea5def226d63514ea6e5936aad8d4ce
-      internalID: -1001339396
+      spriteID: 7c10a5457c95c184ca8f19daffc70c42
+      internalID: -1209541889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_3
-      rect:
-        serializedVersion: 2
-        x: 554
-        y: 10
-        width: 240
-        height: 230
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eae84b44b53b4a34b9bf2d59290f58bf
-      internalID: 1353710104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knight_4
+      name: coin_2
       rect:
         serializedVersion: 2
         x: 830
-        y: 10
-        width: 240
-        height: 230
+        y: 670
+        width: 90
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -685,8 +641,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87534f92b8c8eb742831117a8d2f18c2
-      internalID: 1025617065
+      spriteID: 59a0df631ff155b488d0c8fb36c9748f
+      internalID: 762066859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_3
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 670
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb11f103cba2af438674ee7f9928829
+      internalID: 1103139125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_4
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 670
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68daecd34818e2345adb87b1186539f1
+      internalID: 1922398010
       vertices: []
       indices: 
       edges: []
@@ -712,9 +712,14 @@ TextureImporter:
       cloud_md_1: 1943793728
       cloud_md_2: -969936912
       cloud_sm: 1808070685
+      coin_1: -1209541889
+      coin_2: 762066859
+      coin_3: 1103139125
+      coin_4: 1922398010
       dark_tree_lg: 71375213
       dark_tree_md: -1823831763
       dark_tree_sm: -783901918
+      diamond: 1654065017
       ground: 2788568348960109317
       ground_2: 1552087994
       knight_1: -123870846

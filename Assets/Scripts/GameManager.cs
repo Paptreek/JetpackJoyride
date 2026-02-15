@@ -16,12 +16,25 @@ public class GameManager : MonoBehaviour
     public GameObject darkTrees2;
     public GameObject lightTrees1;
     public GameObject lightTrees2;
-    //public GameObject diamonds;
+    public GameObject diamondsM;
+    public GameObject diamondsSquare;
+    public GameObject diamondsLine;
+    public GameObject spawnManager;
 
     private float _score;
     private float _highScore;
     private float _timer = 1.0f;
     private float _speedIncrease = 0.1f;
+
+    private bool _hasSpawnRateIncreased;
+
+    void Awake()
+    {
+        ravens.GetComponent<Ravens>().moveSpeed = 3.0f;
+        diamondsM.GetComponent<DiamondMovement>().moveSpeed = 3.0f;
+        diamondsSquare.GetComponent<DiamondMovement>().moveSpeed = 3.0f;
+        diamondsLine.GetComponent<DiamondMovement>().moveSpeed = 3.0f;
+    }
 
     void Update()
     {
@@ -49,7 +62,15 @@ public class GameManager : MonoBehaviour
             ground2.GetComponent<Ground>().IncreaseSpeed(_speedIncrease);
 
             // diamond move speed
-            //diamonds.GetComponent<Diamonds>().IncreaseSpeed(_speedIncrease);
+            diamondsM.GetComponent<DiamondMovement>().IncreaseSpeed(_speedIncrease);
+            diamondsSquare.GetComponent<DiamondMovement>().IncreaseSpeed(_speedIncrease);
+            diamondsLine.GetComponent<DiamondMovement>().IncreaseSpeed(_speedIncrease);
+        }
+
+        if (_score > 250 && !_hasSpawnRateIncreased)
+        {
+            spawnManager.GetComponent<SpawnManager>().IncreaseSpawnRate();
+            _hasSpawnRateIncreased = true;
         }
     }
 }

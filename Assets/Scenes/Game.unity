@@ -1047,6 +1047,9 @@ MonoBehaviour:
   darkTrees2: {fileID: 659364471}
   lightTrees1: {fileID: 2045271424}
   lightTrees2: {fileID: 175669719}
+  diamondsM: {fileID: 2242532260485895330, guid: 68a5f194256185f48854de6a65e77f84, type: 3}
+  diamondsSquare: {fileID: 8187493542182771369, guid: 11fec3440a29b90428129ed28b2ce6ea, type: 3}
+  diamondsLine: {fileID: 2510683013646887254, guid: 73b169ca11f45e041953f86237c40233, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

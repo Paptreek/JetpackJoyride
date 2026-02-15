@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ravens : MonoBehaviour
+public class DiamondMovement : MonoBehaviour
 {
     public float moveSpeed;
 
@@ -8,7 +8,7 @@ public class Ravens : MonoBehaviour
     {
         transform.Translate(new Vector3(-moveSpeed, 0, 0) * Time.deltaTime);
 
-        if (transform.position.x <= -11.8f)
+        if (transform.position.x <= -12.0f)
         {
             Destroy(gameObject);
         }

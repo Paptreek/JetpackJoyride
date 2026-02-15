@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
 
     private float _timer;
     private float _shortestSpawn = 2.0f;
-    private float _longestSpawn = 6.0f;
+    private float _longestSpawn = 5.5f;
 
     void Start()
     {
@@ -20,15 +20,14 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-
         _timer -= Time.deltaTime;
 
         if (_timer <= 0)
         {
-            float spawnChoice = Random.Range(1, 6);
+            float spawnChoice = Random.Range(1, 4);
             Debug.Log(spawnChoice);
-            
-            if (spawnChoice == 5)
+
+            if (spawnChoice == 3)
             {
                 SpawnDiamonds();
             }
@@ -43,9 +42,8 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnRavens()
     {
-        //float x = Random.Range(10.3f, 25.0f);
-        float x = 12.5f;
-        float y = Random.Range(-2.0f, 3.0f);
+        float x = 10.0f;
+        float y = Random.Range(-1.75f, 3.25f);
 
         ravens.transform.position = new Vector3(x, y, 0);
 
@@ -54,12 +52,32 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnDiamonds()
     {
-        //float x = Random.Range(10.3f, 25.0f);
-        float x = 12.0f;
-        float y = Random.Range(-2.0f, 2.0f);
+        float spawnChoice = Random.Range(1, 4);
+
+        float x = 10.0f;
+        float y = Random.Range(-3.25f, 1.35f);
 
         diamondsM.transform.position = new Vector3(x, y, 0);
+        diamondsSquare.transform.position = new Vector3(x, y, 0);
+        diamondsLine.transform.position = new Vector3(x, y, 0);
 
-        Instantiate(diamondsM);
+        if (spawnChoice == 1)
+        {
+            Instantiate(diamondsM);
+        }
+        else if (spawnChoice == 2)
+        {
+            Instantiate(diamondsSquare);
+        }
+        else
+        {
+            Instantiate(diamondsLine);
+        }
+    }
+
+    public void IncreaseSpawnRate()
+    {
+        _longestSpawn -= 1.5f;
+        _shortestSpawn -= 1.0f;
     }
 }
