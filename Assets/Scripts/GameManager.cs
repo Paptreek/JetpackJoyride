@@ -16,11 +16,12 @@ public class GameManager : MonoBehaviour
     public GameObject darkTrees2;
     public GameObject lightTrees1;
     public GameObject lightTrees2;
+    //public GameObject diamonds;
 
     private float _score;
     private float _highScore;
     private float _timer = 1.0f;
-    private float _speedIncrease = 0.5f;
+    private float _speedIncrease = 0.1f;
 
     void Update()
     {
@@ -46,6 +47,9 @@ public class GameManager : MonoBehaviour
             // increase ground scroll speed
             ground1.GetComponent<Ground>().IncreaseSpeed(_speedIncrease);
             ground2.GetComponent<Ground>().IncreaseSpeed(_speedIncrease);
+
+            // diamond move speed
+            //diamonds.GetComponent<Diamonds>().IncreaseSpeed(_speedIncrease);
         }
     }
 }

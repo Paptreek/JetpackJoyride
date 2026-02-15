@@ -6,7 +6,7 @@ public class Ground : MonoBehaviour
 
     private void Awake()
     {
-        _scrollSpeed = 1.5f;
+        _scrollSpeed = 3.0f;
     }
 
     void Update()

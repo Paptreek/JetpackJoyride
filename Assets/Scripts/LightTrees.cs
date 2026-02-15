@@ -6,7 +6,7 @@ public class LightTrees : MonoBehaviour
 
     private void Start()
     {
-        _scrollSpeed = 0.25f;
+        _scrollSpeed = 1.75f;
     }
 
     void Update()

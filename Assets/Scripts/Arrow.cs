@@ -8,7 +8,7 @@ public class Arrow : MonoBehaviour
 
     private void Awake()
     {
-        _moveSpeed = 10.0f;
+        _moveSpeed = 11.5f;
         float spawnDistance = Random.Range(10.65f, 25.0f);
         float spawnHeight = player.gameObject.transform.position.y;
 

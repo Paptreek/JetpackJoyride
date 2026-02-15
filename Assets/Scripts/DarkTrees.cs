@@ -6,7 +6,7 @@ public class DarkTrees : MonoBehaviour
 
     private void Awake()
     {
-        _scrollSpeed = 0.5f;
+        _scrollSpeed = 2.0f;
     }
 
     void Update()
