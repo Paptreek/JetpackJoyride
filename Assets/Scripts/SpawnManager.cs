@@ -8,6 +8,8 @@ public class SpawnManager : MonoBehaviour
     public GameObject diamondsLine;
 
     private float _timer;
+    private float _shortestSpawn = 2.0f;
+    private float _longestSpawn = 6.0f;
 
     void Start()
     {
@@ -18,22 +20,24 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-        float spawnChoice = Random.Range(1, 4);
 
         _timer -= Time.deltaTime;
 
         if (_timer <= 0)
         {
-            if (spawnChoice == 3)
+            float spawnChoice = Random.Range(1, 6);
+            Debug.Log(spawnChoice);
+            
+            if (spawnChoice == 5)
             {
                 SpawnDiamonds();
-                _timer = Random.Range(3.0f, 5.0f);
             }
             else
             {
                 SpawnRavens();
-                _timer = Random.Range(3.0f, 5.0f);
             }
+
+            _timer = Random.Range(_shortestSpawn, _longestSpawn);
         }
     }
 
