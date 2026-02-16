@@ -1,11 +1,15 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public TMP_Text scoreText;
     public TMP_Text highScoreText;
+
+    public GameObject gameOver;
 
     public GameObject player;
     public GameObject spawnManager;
@@ -19,10 +23,6 @@ public class GameManager : MonoBehaviour
     
     public GameObject ground1;
     public GameObject ground2;
-    public GameObject darkTrees1;
-    public GameObject darkTrees2;
-    public GameObject lightTrees1;
-    public GameObject lightTrees2;
 
     private float _score;
     private float _highScore;
@@ -54,6 +54,11 @@ public class GameManager : MonoBehaviour
         }
 
         IncreaseDifficulty();
+
+        if (player == null)
+        {
+            AllowRestart();
+        }
     }
 
     private void IncreaseDifficulty()
@@ -93,5 +98,15 @@ public class GameManager : MonoBehaviour
     private int GetHighScore(string keyName)
     {
         return PlayerPrefs.GetInt(keyName);
+    }
+
+    private void AllowRestart()
+    {
+        gameOver.gameObject.SetActive(true);
+
+        if (Keyboard.current.enterKey.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene("Start");
+        }
     }
 }
