@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public float jumpForce;
     public Animator animator;
+    public GameObject collectSound;
 
     private Rigidbody2D _rb;
     private InputAction _jump;
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Diamond"))
         {
             _diamondsCollected++;
+            collectSound.GetComponent<AudioSource>().Play();
         }
     }
 

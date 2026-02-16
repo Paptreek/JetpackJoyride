@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     private float _speedIncrease = 0.1f;
 
     private bool _hasSpawnRateIncreased;
+    private bool _hasSoundPlayed;
 
     void Awake()
     {
@@ -103,6 +104,12 @@ public class GameManager : MonoBehaviour
     private void AllowRestart()
     {
         gameOver.gameObject.SetActive(true);
+
+        if (!_hasSoundPlayed)
+        {
+            gameOver.gameObject.GetComponent<AudioSource>().Play();
+            _hasSoundPlayed = true;
+        }
 
         if (Keyboard.current.enterKey.wasPressedThisFrame)
         {
