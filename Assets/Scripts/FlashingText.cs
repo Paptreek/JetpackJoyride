@@ -11,9 +11,6 @@ public class FlashingText : MonoBehaviour
 
     private void Update()
     {
-        // if active, set active ~> start a timer ~> set inactive
-        // if inactive, set inactive ~> start a timer ~> set active
-
         if (_textIsActive)
         {
             startText.gameObject.SetActive(true);

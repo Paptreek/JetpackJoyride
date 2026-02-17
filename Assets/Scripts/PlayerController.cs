@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rb;
     private InputAction _jump;
     private int _diamondsCollected;
+    private float _jumpSoundTimer = 0;
 
     private void Start()
     {
@@ -24,10 +25,18 @@ public class PlayerController : MonoBehaviour
 
     private void CheckForJump()
     {
+        _jumpSoundTimer -= Time.deltaTime;
+        
         if (_jump.IsPressed())
         {
             _rb.linearVelocityY = jumpForce;
             animator.SetBool("IsJump", true);
+
+            if (_jumpSoundTimer <= 0)
+            {
+                GetComponent<AudioSource>().Play();
+                _jumpSoundTimer = 0.25f;
+            }
         }
         else
         {
